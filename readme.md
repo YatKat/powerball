@@ -10,7 +10,7 @@
 Powerball lottery engine is a simulation of famouse american lottery based on information
 from wikipedia:
  
-![link to wikipedia powerball page](https://en.wikipedia.org/wiki/Powerball#Playing_the_game)
+https://en.wikipedia.org/wiki/Powerball#Playing_the_game
 <hr>
 
 # <a name="stack"></a>Project Stack
