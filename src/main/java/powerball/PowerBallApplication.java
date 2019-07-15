@@ -2,7 +2,12 @@ package powerball;
 
 import java.util.HashMap;
 import java.util.Map;
-// test powerball engine work 1000_000_000 times for statistic.
+
+/**
+ * Class responsible for test powerball engine work 1000_000_000 times for statistic.
+ * For comparing with theoretical probability See PowerBallApplicationTest class.
+ */
+
 public class PowerBallApplication {
     public static int TIMES_COUNT = 0;
 
@@ -12,7 +17,7 @@ public class PowerBallApplication {
         System.out.println(getWinsOddsPerOne(winsStatistic));
     }
 
-    public static Map<WinTickets, Integer> getWinsStatistic(){
+    public static Map<WinTickets, Integer> getWinsStatistic() {
 
         Map<WinTickets, Integer> statistics = new HashMap<>();
         PowerballNumbers powerball = new PowerballNumbers();
@@ -28,7 +33,7 @@ public class PowerBallApplication {
             } else {
                 statistics.put(winTickets, 1);
             }
-            if(statistics.size() == WinTickets.values().length){
+            if (statistics.size() == WinTickets.values().length) {
                 break;
             }
         }
@@ -43,5 +48,5 @@ public class PowerBallApplication {
         }
         return odds;
     }
-
 }
+

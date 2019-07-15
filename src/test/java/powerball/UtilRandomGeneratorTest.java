@@ -3,10 +3,7 @@ package powerball;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.HashSet;
 import java.util.Set;
-
-import static org.junit.Assert.*;
 
 public class UtilRandomGeneratorTest {
 
@@ -20,7 +17,7 @@ public class UtilRandomGeneratorTest {
     @Test
     public void generateCorrectSizeOfWhiteBallsSet() {
         Set<Integer> set = UtilRandomGenerator.generateWhiteBallsSet();
-        Assert.assertEquals(5,set.size());
+        Assert.assertEquals(5, set.size());
     }
 
     @Test
@@ -33,6 +30,6 @@ public class UtilRandomGeneratorTest {
     @Test
     public void generateRedBallFrom1To26() {
         int redBall = UtilRandomGenerator.generateRedBall();
-        Assert.assertTrue(redBall >=1 && redBall <=26);
+        Assert.assertTrue(redBall >= 1 && redBall <= 26);
     }
 }

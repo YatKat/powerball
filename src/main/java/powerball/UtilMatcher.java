@@ -2,6 +2,9 @@ package powerball;
 
 import java.util.Set;
 
+/**
+ * Util class with static methods, that provide function of matching powerball numbers and user's numbers.
+ */
 public class UtilMatcher {
 
     public static int matchWhiteBalls(Set<Integer> userTicket, Set<Integer> powerballNumbers) throws IllegalArgumentException {
@@ -12,7 +15,7 @@ public class UtilMatcher {
         return powerballNumbers.size() * 2 - userTicket.size();
     }
 
-    public static boolean matchRedBall(int userRedBall, int powerballRedBall){
+    public static boolean matchRedBall(int userRedBall, int powerballRedBall) {
         return userRedBall == powerballRedBall;
     }
 }
